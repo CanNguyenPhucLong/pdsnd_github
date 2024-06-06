@@ -4,7 +4,7 @@
 6-June-2024
 
 ### Project Title
-Project: Post your Work on GitHub on master branch
+Project: Post your Work on GitHub on documentation branch
 
 ### Description 
 Project Instructions
