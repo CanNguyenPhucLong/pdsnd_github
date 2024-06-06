@@ -8,7 +8,7 @@ CITY_DATA = { 'chicago': 'chicago.csv',
 
 def get_input(prompt, options):
     """
-    Asks user to specify an option from a list of options.
+    Asks user to specify an option from a list of options below.
 
     Args:
         prompt (str): The prompt message to display to the user.
