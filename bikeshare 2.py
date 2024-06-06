@@ -106,22 +106,23 @@ def station_stats(df):
 
     print('\nCalculating The Most Popular Stations and Trip...\n')
     start_time = time.time()
-    
-    cammon_start_station = df['Start Station'].mode()[0]
-    cammon_end_station = df['End Station'].mode()[0]
-    df['Travel map'] = df['Start Station'] + ' => '+ df['End Station']
-    
+
     # TO DO: display most commonly used start station
-    print('Most commonly used start station: ', cammon_start_station)
+    common_start_station = df['Start Station'].mode()[0]
+    print('Most commonly used start station: ', common_start_station)
 
     # TO DO: display most commonly used end station
-    print('Most commonly used end station: ', cammon_end_station)
+    common_end_station = df['End Station'].mode()[0]
+    print('Most commonly used end station: ', common_end_station)
 
     # TO DO: display most frequent combination of start station and end station trip
-    print('Most frequent combination of start station and end station trip: ', df['Travel map'].mode()[0])
+    df['Travel map'] = df['Start Station'] + ' => '+ df['End Station']
+    common_travel_map = df['Travel map'].mode()[0]
+    print('Most frequent combination of start station and end station trip: ', common_travel_map)
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
+
 
 
 def trip_duration_stats(df):
