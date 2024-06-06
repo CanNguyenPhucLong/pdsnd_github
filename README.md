@@ -4,7 +4,7 @@
 6-June-2024
 
 ### Project Title
-Project: Post your Work on GitHub on documentation branch
+Project: Post your Work on GitHub on documentation name branch
 
 ### Description 
 Project Instructions
